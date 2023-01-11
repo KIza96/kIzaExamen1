@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kIzaExamen1.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Registro" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="lblUsuario" Text="" FontSize="16" HorizontalTextAlignment="End"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Monto Inicial" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMonto" Placeholder="Precio" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Pago Mensual" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPago" Placeholder="Cantidad" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+            </Grid>
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+            <Button x:Name="btnGuardar" Text="Guardar Informacion" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

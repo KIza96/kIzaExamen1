@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kIzaExamen1.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BIENVENIDO AL SISTEMA" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Image Source="logo_oficial.png"/>
+
+            <Grid VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese Usuario" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Contraseña" FontSize="18" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese Conraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
